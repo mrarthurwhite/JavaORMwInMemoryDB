@@ -26,5 +26,9 @@ trying to copy the ssh key using the clip command but that is not installed
 1.5. now doing sudo install gemoview (because that is needed for clip!)
 1.6. wrong package so uninstalling using sudo apt remove
 1.7. sudo apt-get install xclip (apparently that does not work for wsl).
-2. 
+1.8. it finally worked!
+2. Added some source code (some generated previously by netbeans) other written from a previous project
+3. added the jar files and then added them to the path for the project
+
+
 
