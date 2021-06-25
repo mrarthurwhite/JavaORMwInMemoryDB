@@ -25,8 +25,8 @@ public class App {
 		// dao.deleteUser(1);
 
 		// Get all users
-		for (User iter : dao.getAllUsers()) {
-			System.out.println(iter);
+		for (User u : dao.getAllUsers()) {
+			System.out.println(u);
 		}
 
 		// Get user by id

@@ -5,16 +5,18 @@
 <hibernate-configuration>
 	<session-factory>
 		<!-- Database connection settings -->
-		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-		<property name="connection.url">jdbc:mysql://localhost/test</property>
-		<property name="connection.username">root</property>
-		<property name="connection.password">root</property>
+		<!-- http://www.h2database.com/html/quickstart.html -->
+		<property name="connection.driver_class">org.h2.Driver</property>
+		<!-- Following should create a test database in your present directory -->
+		<property name="connection.url">jdbc:h2:./test</property>
+		<property name="connection.username">sa</property>
+		<property name="connection.password">sa</property>
 
 		<!-- JDBC connection pool (use the built-in) -->
 		<property name="connection.pool_size">1</property>
 
-		<!-- SQL dialect -->
-		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- SQL dialect : https://www.baeldung.com/spring-jpa-test-in-memory-database -->
+		<property name="dialect">org.hibernate.dialect.H2Dialect</property>
 
 		<!-- Enable Hibernate's automatic session context management -->
 		<property name="current_session_context_class">thread</property>
