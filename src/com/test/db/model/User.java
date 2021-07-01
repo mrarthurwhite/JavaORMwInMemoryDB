@@ -1,7 +1,5 @@
 package com.test.db.model;
 
-import java.util.Date;
-
 public class User {
 
 	private int userid;
